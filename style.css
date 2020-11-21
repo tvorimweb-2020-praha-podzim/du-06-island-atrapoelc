@@ -1,0 +1,278 @@
+*, :after, :before { box-sizing: border-box; margin: 0; padding: 0; }
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #f5f5f5;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.heading {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hlavicka {
+    display: flex;
+    background-image: url("island-hlavicka.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    color: white;
+
+}
+
+.fotka-hlavicka {
+    display: block;
+}
+
+.text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+ul {
+    text-transform: uppercase;
+    list-style-type: none;
+    color:lightgray;
+}
+
+ul li {
+    border-bottom: 1px solid lightgrey;
+
+}
+.menu {
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+
+.menu a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color:rgb(226, 222, 222);
+    color: lightslategray;
+}
+
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.heading-heading {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.fotka {
+    display: flex;
+    width: 100%;
+    height: auto;    
+}
+
+.fotka-galerie {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.animace {
+    color: grey;
+    text-align: center;
+}
+
+
+.fotospopisem {
+    display: flex;
+    color: grey;
+    flex-direction: column;
+}
+
+.fotospopisem a {
+    color: grey;
+}
+.popisek {
+    align-self: center;
+}
+
+.fotogalerie a {
+    color: grey;
+}
+
+}
+.footer {
+    border: 1px solid lightgray;
+    box-shadow: grey 4px 6px 20px;
+    background-color: rgb(228, 229, 230);
+    color: grey;
+}
+
+.footer a{
+    color: grey;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid lightgrey;
+        border-top: 1px solid lightgray;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    
+    }
+ul li {
+    border: none;
+}
+    .foto1,
+    .foto2,
+    .foto3,
+    .foto4,
+    .foto5,
+    .foto6,
+    .foto7,
+    .foto8,
+    .foto9,
+    .foto10
+     {
+
+        
+        width: 50%;
+        float: left;
+    }
+    
+    .fotospopisem {
+        display: flex;
+        color: grey;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .popisektext {
+        align-self: flex-end;
+        color: rgb(223, 211, 211);
+        padding-right: 1rem;
+        margin-top: -2rem;
+    }
+
+    .popisektext a   {
+        color: rgb(223, 211, 211);
+    }
+    .popisek {
+        color: rgb(223, 211, 211);
+    
+    }
+
+    
+    .foto2,
+    .foto4,
+    .foto6,
+    .foto8 {
+        margin
+    }
+
+    .popisek a {
+        color: rgb(223, 211, 211);
+
+    }
+
+    .footer {
+        clear: both;
+        display: inline-block;
+        padding-top: 2rem;
+    
+    }
+
+    .animace {
+        margin-top: -3rem;
+
+    }
+
+    .animace a {
+        margin-top: -3rem;
+    }
+
+.animace,
+.animace a,
+.popisek {
+    color: rgba(0,0,0,0);
+    transition: color 1s ease-in-out;
+}
+
+
+.animace:hover,
+.animace a:hover,
+.popisek :hover {
+    color: white;
+}
+
+
+    .foto1:hover,
+    .foto2:hover,
+    .foto3:hover,
+    .foto4:hover,
+    .foto5:hover,
+    .foto6:hover,
+    .foto7:hover,
+    .foto8:hover,
+    .foto9:hover 
+    
+    {transform: scale(1.1);
+
+    }
+
+
+}
+
+@media screen and (min-width: 1000px)  {
+
+    .foto1,
+    .foto2,
+    .foto3,
+    .foto4,
+    .foto5,
+    .foto6,
+    .foto7,
+    .foto8,
+    .foto9
+     {
+        width: 33.33333%;
+        float: left;
+    }
+
+    .foto1:hover,
+    .foto2:hover,
+    .foto3:hover,
+    .foto4:hover,
+    .foto5:hover,
+    .foto6:hover,
+    .foto7:hover,
+    .foto8:hover,
+    .foto9:hover 
+    
+    {transform: scale(1.1);
+
+    }
+
+    .animace {
+        color: transparent;
+        margin-bottom: -3rem;
+    }
+    
+    .animace a {
+        color: transparent;
+        margin-bottom: -3rem;
+    } 
+        
+    }
