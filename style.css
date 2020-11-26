@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Merriweather', serif;
-    background-color: #f5f5f5;
+    background-color: #f0ebebe0;
     line-height: 1.5;
     margin: 0;
 }
@@ -147,9 +147,37 @@ ul li {
     .foto10
      {
 
-        
         width: 50%;
         float: left;
+        overflow: hidden;
+        position: relative;
+     }
+
+ .animace {
+    transform: translate(0px, 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color:rgba(17, 16, 16, 0.5);
+    transition: all 1s ease-in 0s;
+     }
+
+.foto1:hover .animace,
+.foto2:hover .animace,
+.foto3:hover .animace,
+.foto4:hover .animace,
+.foto5:hover .animace,
+.foto6:hover .animace,
+.foto7:hover .animace,
+.foto8:hover .animace,
+.foto9:hover .animace {
+    transform: translate(0px, 0%);
+}
+
+    img.fotka-galerie:hover {
+        transform: scale(1.1);
     }
     
     .fotospopisem {
@@ -174,14 +202,6 @@ ul li {
     
     }
 
-    
-    .foto2,
-    .foto4,
-    .foto6,
-    .foto8 {
-        margin
-    }
-
     .popisek a {
         color: rgb(223, 211, 211);
 
@@ -194,49 +214,96 @@ ul li {
     
     }
 
-    .animace {
+ .animace {
         margin-top: -3rem;
 
     }
-
-    .animace a {
-        margin-top: -3rem;
-    }
-
-.animace,
-.animace a,
-.popisek {
-    color: rgba(0,0,0,0);
-    transition: color 1s ease-in-out;
-}
-
-
-.animace:hover,
-.animace a:hover,
-.popisek :hover {
-    color: white;
-}
-
-
-    .foto1:hover,
-    .foto2:hover,
-    .foto3:hover,
-    .foto4:hover,
-    .foto5:hover,
-    .foto6:hover,
-    .foto7:hover,
-    .foto8:hover,
-    .foto9:hover 
-    
-    {transform: scale(1.1);
-
-    }
-
 
 }
 
 @media screen and (min-width: 1000px)  {
 
+    .obsah {
+        width: 960px;
+        background-color: white;
+        border: 0.5px rgba(241, 238, 238, 0.2) solid;
+        margin: auto;
+        margin-top: -2.5rem;
+    }
+
+    .hlavicka {
+        padding-bottom: 2rem;
+    }
+
+    .menu {
+        float: left;
+        padding: 2rem 3rem 15rem 3rem;
+    }
+
+    .fotospopisem {
+        display: block;
+    }
+
+    .textpodmenu {
+        padding-top: 2rem;
+    }
+ 
+    .fotospopisem {
+        display: block;
+        color: grey;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding-top: 2rem;
+    }
+
+    .popisektext {
+        align-self: flex-end;
+        color: rgb(223, 211, 211);
+        padding-right: 1rem;
+        margin-top: -2rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .popisektext a   {
+        color: rgb(223, 211, 211);
+    }
+    .popisek {
+        color: rgb(223, 211, 211);
+    
+    }
+
+    .popisek a {
+        color: rgb(223, 211, 211);
+
+    }
+
+    .footer {
+        clear: both;
+        display: flex;
+        padding-top: 2rem;
+        justify-content: end;
+        width: 960px;
+        margin: auto;
+
+    }
+
+    h2 {
+        padding-top: 1rem;
+    }
+
+    .textvlevo {
+        text-align: left;
+        padding-right: 12rem;
+    }
+
+    .covidetna {
+        padding-left: 12rem;
+    }
+ h2#covidet.heading-heading {
+        padding-left: 10rem;
+    }
+    
     .foto1,
     .foto2,
     .foto3,
@@ -249,30 +316,35 @@ ul li {
      {
         width: 33.33333%;
         float: left;
-    }
-
-    .foto1:hover,
-    .foto2:hover,
-    .foto3:hover,
-    .foto4:hover,
-    .foto5:hover,
-    .foto6:hover,
-    .foto7:hover,
-    .foto8:hover,
-    .foto9:hover 
-    
-    {transform: scale(1.1);
-
+        overflow: hidden;
+        position: relative;
     }
 
     .animace {
-        color: transparent;
-        margin-bottom: -3rem;
+        transform: translate(0px, 100%);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+        background-color:rgba(17, 16, 16, 0.5);
+        transition: all 1s ease-in 0s;
+         }
+    
+    .foto1:hover .animace,
+    .foto2:hover .animace,
+    .foto3:hover .animace,
+    .foto4:hover .animace,
+    .foto5:hover .animace,
+    .foto6:hover .animace,
+    .foto7:hover .animace,
+    .foto8:hover .animace,
+    .foto9:hover .animace {
+        transform: translate(0px, 0%);
     }
     
-    .animace a {
-        color: transparent;
-        margin-bottom: -3rem;
-    } 
-        
+    img.fotka-galerie:hover {
+            transform: scale(1.1);
+        }
+
     }
